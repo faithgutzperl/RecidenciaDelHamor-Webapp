@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Recidencia Del Hamor</title>
+</head>
+
+<body class="bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#E8F9FF] drop-shadow-lg w-full px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <a href="#" class="text-sm font-semibold text-[#003092] font-['Lexend_Zetta']">Residencia Del Hamor</a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden md:flex items-center space-x-10 text-[#001A6E] font-['Poppins']">
+            <li>
+                <a href="index.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="accommodation.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Accommodation
+                </a>
+            </li>
+            <li>
+                <a href="amenities.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Amenities
+                </a>
+            </li>
+            <li>
+                <a href="contact.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="book.html">
+                    <button
+                        class="relative inline-flex items-center justify-center px-1 py-1 text-sm font-['Poppins'] text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-3 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                        <span
+                            class="relative transition-all ease-in duration-75 bg-white text-[#001A6E] dark:bg-[#E8F9FF] rounded-md px-4 py-2 group-hover:bg-transparent group-hover:dark:bg-transparent">
+                            Book Now
+                        </span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-[#003092] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-14 left-0 w-full bg-[#E8F9FF] shadow-md py-4">
+            <ul class="text-center space-y-4 text-[#143D60] font-medium">
+                <li><a href="index.html" class="block hover:text-[#003092]">Home</a></li>
+                <li><a href="accommodation.html" class="block hover:text-[#003092]">Accomodation</a></li>
+                <li><a href="amenities.html" class="block hover:text-[#003092]">Amenities</a></li>
+                <li><a href="contact.html" class="block hover:text-[#003092]">Contact</a></li>
+                <li><a href="book.html" class="block hover:text-[#003092]">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative flex flex-col justify-center h-screen text-center px-6">
+        <!-- Full-Width Background Image -->
+        <div class="absolute inset-0">
+            <img src="images/bg1.webp" alt="Hero Image" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-10"></div> <!-- Dark Overlay -->
+        </div>
+
+        <!-- Text Content -->
+        <div class="relative z-10 flex flex-col items-center">
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-[#003092] font-['Lexend_Zetta']">Residencia Del Hamor
+            </h1>
+            <p class="mt-5 text-sm sm:text-lg text-white font-['Poppins']">
+                Recidencia Del Hamor Beach Front is a Mediterranean style Beach Resort. <br> A perfect choice for a long
+                vacation immersed in the relaxing atmosphere of a crystalline water and an artistic scenery of the
+                place.
+            </p>
+            <button
+                class="mt-4 px-4 py-2 rounded-full bg-[#000957] text-white font-['Poppins'] hover:bg-[#344CB7] transition">
+                Explore now
+            </button>
+        </div>
+    </div>
+
+
+    <footer
+        class="bottom-0 left-0 z-20 w-full p-4 bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
+        <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia Del
+                Hamor™</a>. All Rights Reserved.
+        </span>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let links = document.querySelectorAll(".nav-link");
+            let currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("after:w-full"); // Make underline permanent for active page
+                    //link.classList.add("text-[#003092]"); // Optional: Make text bold
+                }
+            });
+        });
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

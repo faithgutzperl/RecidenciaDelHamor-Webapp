@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Accommodation</title>
+</head>
+
+<body class="bg-[#E8F9FF]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#E8F9FF] drop-shadow-lg w-full px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="text-sm font-semibold text-[#003092] font-['Lexend_Zetta']">Recidencia Del Hamor</a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden md:flex items-center space-x-10 text-[#001A6E] font-['Poppins']">
+            <!-- Navigation Links (Desktop) -->
+            <ul class="hidden md:flex items-center space-x-10 text-[#001A6E] font-['Poppins']">
+                <li>
+                    <a href="index.html"
+                        class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="accommodation.html"
+                        class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                        Accommodation
+                    </a>
+                </li>
+                <li>
+                    <a href="amenities.html"
+                        class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                        Amenities
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html"
+                        class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="book.html">
+                        <button
+                            class="relative inline-flex items-center justify-center px-1 py-1 text-sm font-['Poppins'] text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-3 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                            <span
+                                class="relative transition-all ease-in duration-75 bg-white text-[#001A6E] dark:bg-[#E8F9FF] rounded-md px-4 py-2 group-hover:bg-transparent group-hover:dark:bg-transparent">
+                                Book Now
+                            </span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-[#003092] focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden absolute top-14 left-0 w-full bg-[#E8F9FF] shadow-md py-4">
+                <ul class="text-center space-y-4 text-[#143D60] font-medium">
+                    <li><a href="index.html" class="block hover:text-[#003092]">Home</a></li>
+                    <li><a href="accommodation.html" class="block hover:text-[#003092]">Accomodation</a></li>
+                    <li><a href="amenities.html" class="block hover:text-[#003092]">Amenities</a></li>
+                    <li><a href="contact.html" class="block hover:text-[#003092]">Contact</a></li>
+                    <li><a href="book.html" class="block hover:text-[#003092]">Book Now</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="h-screen w-full bg-center bg-no-repeat bg-cover bg-[url('images/bg2.webp')] bg-gray-300 bg-blend-multiply">
+        <div class="px-4 mx-auto max-w-screen-xl text-center flex flex-col justify-center h-full">
+            <h1
+                class="mb-4 text-4xl font-extrabold font-['Lexend_Zetta'] tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Our Rooms
+            </h1>
+        </div>
+    </section>
+
+    <!-- Image Grid Section (with gap from hero) -->
+
+    <section class="py-5 bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF]">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-10xl mx-auto px-4 ">
+
+            <!-- Room 1 -->
+            <div class="relative group">
+                <img onclick="openModal('modal1')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg18.webp" alt="">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">
+                        Executive Double Room With Beach View
+                    </p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>2 Single bed or 1 Queen bed</span>
+                    </div>
+
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Towels</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal1')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Room 2 -->
+            <div class="relative group">
+                <img onclick="openModal('modal2')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg4.webp" alt="Junior Suite">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">Single Room With Beach View
+                    </p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>1 Queen bed</span>
+                    </div>
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Towels</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal2')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="relative group">
+                <img onclick="openModal('modal3')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg5.webp" alt="Standard Queen Room">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">Beach View Room</p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>1 Queen bed</span>
+                    </div>
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M11.5 20q-.8 0-1.487-.4T8.9 18.5q-.275-.5-.012-1T9.7 17q.325 0 .575.2t.45.45q.125.175.338.263T11.5 18q.425 0 .713-.288T12.5 17t-.288-.712T11.5 16H3q-.425 0-.712-.288T2 15t.288-.712T3 14h8.5q1.25 0 2.125.875T14.5 17t-.875 2.125T11.5 20M3 10q-.425 0-.712-.288T2 9t.288-.712T3 8h12.5q.625 0 1.063-.437T17 6.5t-.437-1.062T15.5 5q-.4 0-.75.188t-.55.537q-.175.3-.425.538t-.6.237q-.5 0-.812-.375t-.163-.8q.35-1.05 1.263-1.687T15.5 3q1.45 0 2.475 1.025T19 6.5t-1.025 2.475T15.5 10zm16.95 7.7q-.5.225-.975-.062T18.5 16.8q0-.35.238-.587t.537-.413q.35-.2.538-.55T20 14.5q0-.625-.437-1.062T18.5 13H3q-.425 0-.712-.288T2 12t.288-.712T3 11h15.5q1.45 0 2.475 1.025T22 14.5q0 1.05-.55 1.913t-1.5 1.287" />
+                            </svg>
+                            <span>Air Conditioning</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal3')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 4 -->
+            <div class="relative group">
+                <img onclick="openModal('modal4')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg3.webp" alt="Standard Queen Room">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">Double Or Twin Room With
+                        Beach View</p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>1 Double bed or 2 Single bed</span>
+                    </div>
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Towels</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal4')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 5 -->
+            <div class="relative group">
+                <img onclick="openModal('modal5')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg19.webp" alt="">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">
+                        Standard Queen Room
+                    </p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>1 Double bed</span>
+                    </div>
+
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Towels</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal5')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 6 -->
+            <div class="relative group">
+                <img onclick="openModal('modal6')"
+                    class="cursor-pointer w-full h-[250px] object-cover rounded-t-md transform transition duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-lg"
+                    src="images/bg20.webp" alt="">
+                <div class="bg-white shadow-lg border border-gray-200 rounded-b-md p-2">
+                    <p class="mt-2 text-start text-[#001A6E] font-semibold font-['Poppins']">
+                        Deluxe Room
+                    </p>
+                    <br>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                        </svg>
+                        <span>1 Queen bed</span>
+                    </div>
+
+                    <!-- Room Features -->
+                    <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3 font-['Poppins']">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                            </svg>
+                            <span>Non-smoking</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                            </svg>
+                            <span>Private bathroom</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Desk</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Highchair</span>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                            </svg>
+                            <span>Towels</span>
+                        </div>
+                    </div>
+
+                    <!-- Check Availability Button -->
+                    <div class="flex justify-center mt-6">
+                        <button onclick="openModal('modal6')"
+                            class="w-full max-w-[200px] font-['Poppins'] text-white bg-blue-600 hover:bg-blue-700 px-5 py-1.5 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- MODALS -->
+    <div id="modal1" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal1')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Executive Double Room With Beach View
+            </h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>2 Single bed or 1 Queen bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>7m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Jacuzzi</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 19,917</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal2')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Single Room With Beach View</h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>1 Queen bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>5.6m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Balcony</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 25,818</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal3" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal3')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Beach View Room</h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>1 Queen bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>7.4m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11.5 20q-.8 0-1.487-.4T8.9 18.5q-.275-.5-.012-1T9.7 17q.325 0 .575.2t.45.45q.125.175.338.263T11.5 18q.425 0 .713-.288T12.5 17t-.288-.712T11.5 16H3q-.425 0-.712-.288T2 15t.288-.712T3 14h8.5q1.25 0 2.125.875T14.5 17t-.875 2.125T11.5 20M3 10q-.425 0-.712-.288T2 9t.288-.712T3 8h12.5q.625 0 1.063-.437T17 6.5t-.437-1.062T15.5 5q-.4 0-.75.188t-.55.537q-.175.3-.425.538t-.6.237q-.5 0-.812-.375t-.163-.8q.35-1.05 1.263-1.687T15.5 3q1.45 0 2.475 1.025T19 6.5t-1.025 2.475T15.5 10zm16.95 7.7q-.5.225-.975-.062T18.5 16.8q0-.35.238-.587t.537-.413q.35-.2.538-.55T20 14.5q0-.625-.437-1.062T18.5 13H3q-.425 0-.712-.288T2 12t.288-.712T3 11h15.5q1.45 0 2.475 1.025T22 14.5q0 1.05-.55 1.913t-1.5 1.287" />
+                    </svg>
+                    <span>Air conditioning</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 33,195</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal4')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Double Or Twin Room With Beach View</h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>1 Double bed or 2 Single bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>7.4m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Balcony</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 40,572</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal5')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Standard Queen Room</h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>1 Double bed or 2 Single bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>7.4m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Balcony</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 35,730</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="hidden fixed inset-0 bg-black bg-opacity-50">
+        <div
+            class="bg-white p-6 rounded-lg max-w-md shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <button onclick="closeModal('modal6')"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <h2 class="text-2xl font-semibold text-[#001A6E] font-['Poppins']">Deluxe Room</h2>
+
+            <div class="flex items-center space-x-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                </svg>
+                <span>1 Double bed or 2 Single bed</span>
+            </div>
+
+            <!-- Details Grid -->
+            <div class="grid grid-cols-2 gap-3 mt-3 text-sm text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.8 22.6L13.2 16H2v-3h8.2L1.4 4.2l1.4-1.4l18.4 18.4zm-.95-6.6l-.85-.85V13h1.5v3zm1.65 0v-3H22v3zM17 14.15L15.85 13H17zM18 12v-1.3q0-.975-.575-1.487T16.05 8.7H14.5q-1.4 0-2.375-.975T11.15 5.35t.975-2.375T14.5 2v1.5q-.75 0-1.3.525t-.55 1.325t.55 1.325t1.3.525h1.55q1.4 0 2.425.9t1.025 2.25V12zm2.5 0V9.75q0-1.65-1.15-2.85T16.5 5.7V4.2q.75 0 1.3-.55t.55-1.3h1.5q0 .725-.275 1.313T18.85 4.75q1.4.65 2.275 2t.875 3V12z" />
+                    </svg>
+                    <span>Non-smoking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M5 20v-9.15L2.2 13L1 11.4L12 3l4 3.05V4h3v4.35l4 3.05l-1.2 1.6l-2.8-2.15V20h-5v-6h-4v6zm5-9.975h4q0-.8-.6-1.313T12 8.2t-1.4.513t-.6 1.312" />
+                    </svg>
+                    <span>7.4m²</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 9q-.825 0-1.412-.587T5 7t.588-1.412T7 5t1.413.588T9 7t-.587 1.413T7 9M4 22v-1H2v-8h3v-.75q0-.95.65-1.6t1.6-.65q.5 0 .925.2t.775.55l1.4 1.55q.2.2.388.375t.412.325H18V4.85q0-.35-.25-.6t-.6-.25q-.15 0-.288.063t-.262.187L15.35 5.5q.125.425.05.838t-.3.762l-2.75-2.8q.35-.225.75-.288t.8.088l1.25-1.25q.4-.4.913-.625T17.15 2q1.2 0 2.025.825T20 4.85V13h2v8h-2v1zm0-3h16v-4H4zm0 0h16z" />
+                    </svg>
+                    <span>Private bathroom</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Desk</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Highchair</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Balcony</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                    </svg>
+                    <span>Towels</span>
+                </div>
+                <div class="mt-1 text-lg font-semibold text-green-600">Price: PHP 37,839</div>
+            </div>
+        </div>
+    </div>
+
+    <footer
+        class="bottom-0 left-0 z-20 w-full p-4 bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
+        <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia Del
+                Hamor™</a>. All Rights Reserved.
+        </span>
+    </footer>
+    
+
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- JavaScript for Modals -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove("hidden");
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add("hidden");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let links = document.querySelectorAll(".nav-link");
+            let currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("after:w-full"); // Make underline permanent for active page
+                    //link.classList.add("text-[#003092]"); // Optional: Make text bold
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

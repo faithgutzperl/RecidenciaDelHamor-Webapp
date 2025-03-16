@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body class="bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF] overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="bg-[#E8F9FF] drop-shadow-lg w-full px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="text-sm font-semibold text-[#003092] font-['Lexend_Zetta']">Recidencia Del
+                Hamor</a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden md:flex items-center space-x-10 text-[#001A6E] font-['Poppins']">
+            <li>
+                <a href="index.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="accommodation.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Accommodation
+                </a>
+            </li>
+            <li>
+                <a href="amenities.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Amenities
+                </a>
+            </li>
+            <li>
+                <a href="contact.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="book.html">
+                    <button
+                        class="relative inline-flex items-center justify-center px-1 py-1 text-sm font-['Poppins'] text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-3 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                        <span
+                            class="relative transition-all ease-in duration-75 bg-white text-[#001A6E] dark:bg-[#E8F9FF] rounded-md px-4 py-2 group-hover:bg-transparent group-hover:dark:bg-transparent">
+                            Book Now
+                        </span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-[#003092] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-14 left-0 w-full bg-[#E8F9FF] shadow-md py-4">
+            <ul class="text-center space-y-4 text-[#143D60] font-medium">
+                <li><a href="index.html" class="block hover:text-[#003092]">Home</a></li>
+                <li><a href="accommodation.html" class="block hover:text-[#003092]">Accomodation</a></li>
+                <li><a href="amenities.html" class="block hover:text-[#003092]">Amenities</a></li>
+                <li><a href="contact.html" class="block hover:text-[#003092]">Contact</a></li>
+                <li><a href="book.html" class="block hover:text-[#003092]">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 mt-10 px-5 md:px-20">
+            <!-- Left Side Content -->
+            <div class="max-w-full text-left px-5 md:px-10">
+                <div class="text-4xl md:text-5xl font-bold text-[#004D73] font-['Poppins']">
+                    Located in Sorsogon City
+                </div>
+
+                <div class="mt-4 text-sm font-medium flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 text-[#004D73]"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.134 2 5 5.134 5 9c0 4.627 7 13 7 13s7-8.373 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.379 0-2.5-1.121-2.5-2.5S10.621 6.5 12 6.5 14.5 7.621 14.5 9 13.379 11.5 12 11.5z" />
+                    </svg>
+                    <span class="text-[#004D73] font-['Poppins']">
+                        Brgy. Bon-ot, 4700 Sorsogon City, Bicol, Philippines
+                    </span>
+                </div>
+
+                <div class="mt-6 flex justify-start">
+                    <div class="w-full rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.497548493545!2d123.9876543!3d12.9912345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31674f6d85c56789%3A0xd7b1c1234567890!2sBrgy.%20Bon-ot%2C%204700%20Sorsogon%20City%2C%20Sorsogon%2C%20Bicol%2C%20Philippines!5e0!3m2!1sen!2sph!4v1710192145678!5m2!1sen!2sph"
+                            width="100%" height="405" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="flex flex-col items-center mt-6">
+                <a href="https://www.google.com/maps/dir/..." target="_blank"
+                    class="bg-[#004D73] text-white px-4 py-2 rounded-full shadow-md hover:bg-[#00395A] transition flex items-center gap-2 max-w-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-white"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.134 2 5 5.134 5 9c0 4.627 7 13 7 13s7-8.373 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.379 0-2.5-1.121-2.5-2.5S10.621 6.5 12 6.5 14.5 7.621 14.5 9 13.379 11.5 12 11.5z" />
+                    </svg>
+                    Get Directions
+                </a>
+
+
+                <!-- Contact Form -->
+                <div class="bg-white text-[#004D73] p-4 rounded-lg shadow-md mt-5 w-full max-w-md">
+                    <p class="font-semibold text-xl text-center font-['Poppins'] mb-3">Contact Us</p>
+
+                    <form action="#" method="POST" class="space-y-3 font-['Poppins'] text-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="first-name" name="first-name"
+                                    class="w-full p-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                                    placeholder="First name" required>
+                            </div>
+
+                            <div>
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name"
+                                    class="w-full p-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                                    placeholder="Last name" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full p-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                                placeholder="Your email" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full p-1.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                                placeholder="Phone number" required>
+                        </div>
+
+                        <div>
+                            <textarea id="message"
+                                class="w-full h-28 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73] resize-none"
+                                placeholder="Type here..." rows="4" maxlength="120"></textarea>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <button type="submit"
+                                class="bg-[#004D73] text-white px-4 py-1.5 text-sm rounded-full shadow-md hover:bg-[#00395A] transition w-full">
+                                Submit
+                            </button>
+                        </div>
+
+                        <p class="text-center text-xs text-gray-500 mt-2">
+                            By contacting us, you agree to our <span class="font-semibold">Terms</span> of service and
+                            <span class="font-semibold">Privacy Policy</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="mt-5">
+        <footer
+            class="bottom-0 left-0 z-20 w-full p-4 bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
+            <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia
+                    Del
+                    Hamor™</a>. All Rights Reserved.
+            </span>
+        </footer>
+    </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let links = document.querySelectorAll(".nav-link");
+            let currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("after:w-full"); // Make underline permanent for active page
+                    //link.classList.add("text-[#003092]"); // Optional: Make text bold
+                }
+            });
+        });
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

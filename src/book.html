@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Book</title>
+</head>
+
+<body class="bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF] ">
+  <div>
+    <!-- Header and Hero Section -->
+    <div class=" bg-[#E8F9FF] shadow-md w-full px-6 py-5">
+      <a href="index.html" class="text-sm font-semibold text-[#003092] font-['Lexend_Zetta']">
+        Residencia Del Hamor
+      </a>
+    </div>
+
+    <div class="flex flex-col md:flex-row p-4 mx-4 md:mx-10 items-stretch">
+
+      <!-- Image Section -->
+      <img src="images/bg15.webp" alt="Hotel Image" class="w-full md:w-1/3 rounded-l-md object-cover h-[530px]">
+
+      <!-- Text Section -->
+      <div class="w-full md:w-2/3">
+        <div class="bg-[#E8F9FF] p-6 shadow-md flex flex-col justify-center items-center text-center">
+          <h2 class="text-2xl text-[#003092] font-semibold font-['Lexend_Zetta']">
+            Mediterranean style Beach Resort
+          </h2>
+          <a href="index.html" class="mt-5 font-['Lexend_Zetta'] text-blue-950 border-b-2 border-blue-950 pb-1">
+            Residencia Del Hamor
+          </a>
+        </div>
+        <div class="bg-white h-[400px] p-6 font-['Poppins']">
+          <form class="space-y-4">
+
+            <!-- First and Last Name -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[#004D73]">
+              <div>
+                <label for="firstName" class="block text-sm">First Name *</label>
+                <input type="text" id="firstName"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  placeholder="First name" required />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm">Last Name *</label>
+                <input type="text" id="lastName"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  placeholder="Last name" required />
+              </div>
+            </div>
+
+            <!-- Contact Field -->
+            <div>
+              <label for="contact" class="block text-sm text-[#004D73]">Phone Number *</label>
+              <input type="tel" id="contact"
+                class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                placeholder="Phone Number" required />
+            </div>
+
+            <!-- Dates Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="checkIn" class="block text-sm text-[#004D73]">Check-in Date *</label>
+                <input type="date" id="checkIn"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  required />
+              </div>
+              <div>
+                <label for="checkOut" class="block text-sm text-[#004D73]">Check-out Date *</label>
+                <input type="date" id="checkOut"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  required />
+              </div>
+            </div>
+
+            <!-- Room Type & Number of Guests -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="roomType" class="block text-sm text-[#004D73]">Room Type *</label>
+                <select id="roomType"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  required>
+                  <option value="">Please Select</option>
+                  <option value="R1">Executive Double Room With Beach View</option>
+                  <option value="R2">Single Room With Beach View</option>
+                  <option value="R3">Beach View Room</option>
+                  <option value="R4">Double Or Twin Room With Beach View</option>
+                  <option value="R5">Standard Queen Room</option>
+                  <option value="R5">Deluxe Room</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="guests" class="block text-sm text-[#004D73]">Number of Guests *</label>
+                <input type="number" id="guests" min="1" max="10"
+                  class="w-full p-2 border text-sm border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#004D73]"
+                  placeholder="e.g., 2" required />
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+              class="bg-[#004D73] text-white w-full py-2 rounded-md mt-4 text-sm hover:bg-[#003092] transition">
+              Book Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer
+    class="bottom-0 left-0 z-20 w-full bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
+    <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia Del
+        Hamor™</a>. All Rights Reserved.
+    </span>
+  </footer>
+
+  </div>
+
+
+
+</body>
+
+</html>

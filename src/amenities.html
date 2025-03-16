@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Amenities</title>
+</head>
+
+<body">
+    <!-- Navbar -->
+    <nav class="bg-[#E8F9FF] drop-shadow-lg w-full px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="text-sm font-semibold text-[#003092] font-['Lexend_Zetta']">Recidencia Del Hamor</a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden md:flex items-center space-x-10 text-[#001A6E] font-['Poppins']">
+            <li>
+                <a href="index.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="accommodation.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Accommodation
+                </a>
+            </li>
+            <li>
+                <a href="amenities.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Amenities
+                </a>
+            </li>
+            <li>
+                <a href="contact.html"
+                    class="nav-link relative text-[#001A6E] hover:text-[#003092] after:block after:h-[2px] after:bg-[#003092] after:w-0 hover:after:w-full after:transition-all after:duration-300">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="book.html">
+                    <button
+                        class="relative inline-flex items-center justify-center px-1 py-1 text-sm font-['Poppins'] text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-3 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                        <span
+                            class="relative transition-all ease-in duration-75 bg-white text-[#001A6E] dark:bg-[#E8F9FF] rounded-md px-4 py-2 group-hover:bg-transparent group-hover:dark:bg-transparent">
+                            Book Now
+                        </span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-[#003092] focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-14 left-0 w-full bg-[#E8F9FF] shadow-md py-4">
+            <ul class="text-center space-y-4 text-[#143D60] font-medium">
+                <li><a href="index.html" class="block hover:text-[#003092]">Home</a></li>
+                <li><a href="accommodation.html" class="block hover:text-[#003092]">Accomodation</a></li>
+                <li><a href="amenities.html" class="block hover:text-[#003092]">Amenities</a></li>
+                <li><a href="contact.html" class="block hover:text-[#003092]">Contact</a></li>
+                <li><a href="book.html" class="block hover:text-[#003092]">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <section class="h-screen w-full bg-gray-300 relative">
+        <div class="absolute inset-0 flex flex-col items-center justify-center w-full text-center z-10">
+            <h1
+                class="mb-4 text-4xl font-extrabold font-['Lexend_Zetta'] tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Amenities
+            </h1>
+        </div>
+
+
+        <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div
+                    class="swiper-slide bg-center bg-no-repeat bg-cover bg-[url('images/bg16.webp')] bg-blend-multiply flex items-center justify-center">
+                </div>
+
+                <!-- Slide 2 -->
+                <div
+                    class="swiper-slide bg-center bg-no-repeat bg-cover bg-[url('images/bg15.webp')] bg-blend-multiply flex items-center justify-center">
+                </div>
+
+                <!-- Slide 3 -->
+                <div
+                    class="swiper-slide bg-center bg-no-repeat bg-cover bg-[url('images/bg11.webp')] bg-blend-multiply flex items-center justify-center">
+                </div>
+
+                <!-- Slide 4 -->
+                <div
+                    class="swiper-slide bg-center bg-no-repeat bg-cover bg-[url('images/b17.webp')] bg-blend-multiply flex items-center justify-center">
+                </div>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF] py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-extrabold text-[#004D73] mb-2 font-['Poppins']">Our Amenities</h2>
+            <p class="text-gray-600 mb-8 font-['Poppins']">Experience comfort and luxury with our top-notch facilities.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10">
+                <!-- Amenity 1: Swimming Pool -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M2.5 20.462v-1.039q.777-.096 1.242-.51q.466-.413 1.635-.413t1.733.5t1.579.5t1.578-.5T12 18.5t1.752.5t1.598.5t1.56-.5t1.713-.5t1.635.414t1.242.509v1.039q-.898-.116-1.418-.539t-1.459-.423t-1.482.5q-.545.5-1.791.5t-1.829-.5q-.582-.5-1.521-.5t-1.502.5t-1.81.5t-1.81-.5q-.562-.5-1.501-.5t-1.459.423t-1.418.539m0-4.5v-1.039q.777-.096 1.242-.51Q4.208 14 5.377 14t1.736.5t1.576.5q1.015 0 1.578-.5T12 14t1.733.5t1.578.5t1.58-.5q.563-.5 1.732-.5t1.635.414t1.242.509v1.038q-.898-.115-1.418-.538T18.623 15t-1.474.5t-1.799.5q-1.252 0-1.832-.5T12 15q-.95 0-1.499.5t-1.812.5t-1.819-.5t-1.493-.5t-1.459.423t-1.418.539m13.93-12.27q.878 0 1.497.623q.62.622.62 1.493q0 .877-.62 1.496t-1.496.619t-1.497-.62q-.618-.618-.618-1.495q0-.871.618-1.493q.62-.623 1.497-.623M8.669 11.5q-.275 0-.483-.085t-.401-.246l3.229-3.229l-1.539-1.538l-3.737-1.517V3.5l4.654 1.846l5.824 5.823q-.195.16-.402.245q-.208.086-.483.086q-.67 0-1.32-.5T12 10.5t-2.011.5t-1.32.5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Swimming Pool</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Relax and unwind in our luxurious pool area.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Amenity 2: Fitness Center -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="m7.05 7.758l-3.1 3.1q-.179.179-.447.182q-.268.002-.453-.182q-.179-.18-.182-.447q-.002-.269.176-.453l.995-1l-.335-.335q-.242-.242-.242-.565t.242-.566l1.535-1.534L4.187 4.9q-.14-.14-.15-.341t.155-.367q.16-.16.351-.162q.192-.003.357.156l1.058 1.052l1.534-1.534q.243-.242.566-.242t.565.242l.335.335l1-.995q.179-.179.447-.179t.453.185q.178.179.178.45t-.178.45l-3.1 3.1l9.192 9.192l3.1-3.1q.179-.178.447-.181q.269-.003.453.181q.179.18.182.448q.002.268-.176.452l-.994 1l.334.335q.243.242.243.565q0 .324-.243.566l-1.534 1.534l1.052 1.058q.14.14.15.341t-.156.367q-.16.16-.351.162q-.192.003-.357-.156l-1.058-1.052l-1.534 1.534q-.243.243-.566.243t-.565-.243l-.335-.334l-1 .994q-.179.179-.447.179t-.453-.185q-.178-.179-.178-.45t.178-.45l3.1-3.1z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Fitness Center</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Stay fit with our state-of-the-art gym
+                            facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Amenity 3: Ocean View -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M5 20V4h14v16zm1.77-8.5h4.46v-.77h1.54v.77h4.46V5.77H6.77zm0 6.73h10.46V12.5H6.77zM6 19h12V5H6z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Ocean View</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Enjoy breathtaking views from our beachfront
+                            rooms.</p>
+                    </div>
+                </div>
+
+                <!-- Amenity 4: Conference Room -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M4.5 20v-1h2V4h8v1h3v14h2v1h-3V6h-2v14zm7-7.23q.31 0 .54-.23t.23-.54t-.23-.54t-.54-.23t-.54.23t-.23.54t.23.54t.54.23" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Conference Room</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Perfect for business meetings and
+                            presentations.</p>
+                    </div>
+                </div>
+
+                <!-- Amenity 5: Free Wi-Fi -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="m6.35 15.35l-1.023-1.034q1.334-1.346 3.056-2.061q1.722-.716 3.616-.716q1.893 0 3.617.722q1.725.722 3.057 2.066L17.65 15.35q-1.125-1.125-2.587-1.737T12 13t-3.062.613T6.35 15.35M2.1 11.1l-1.023-1.023q2.183-2.194 5.01-3.366t5.917-1.172t5.912 1.172q2.825 1.172 5.007 3.366L21.9 11.1q-1.975-1.975-4.537-3.037T12 7T6.637 8.063T2.1 11.1M12 21l-2.448-2.454q.486-.486 1.119-.747q.633-.26 1.327-.26t1.329.26t1.121.747z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Free Wi-Fi</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Stay connected with our high-speed internet.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Amenity 6: 24/7 Room Service -->
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M3.23 17.385v-1h17.54v1zM4 15v-.23q0-2.95 2.01-5.103Q8.022 7.516 11 7.097V5.653h2v1.442q2.985.42 4.992 2.571T20 14.77V15z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">24/7 Room Service</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Enjoy round-the-clock dining and assistance.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M3.154 18.154v-1.77h13.923v1.77zm14.923 0v-1.77h.884v1.77zm1.884 0v-1.77h.885v1.77zM18.077 15v-1.3q0-.898-.575-1.468t-1.375-.57h-1.55q-1.13 0-1.933-.819t-.802-1.993q0-1.11.802-1.884t1.933-.774v.885q-.75 0-1.3.502t-.55 1.267t.55 1.348t1.3.583h1.55q1.17 0 2.002.833q.832.832.832 2.01V15zm1.885 0v-2.25q0-1.65-1.15-2.696t-2.85-1.046v-.885q.75 0 1.28-.53t.531-1.281q0-.789-.53-1.339t-1.281-.55v-.884q1.13 0 1.913.82q.783.822.783 1.953q0 .725-.294 1.245t-.745.844q1.304.422 2.266 1.541q.961 1.12.961 2.808V15z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-[#004D73]">Smoking Area</h3>
+                        <p class="text-gray-600 text-sm">Designated area for smokers with comfortable seating.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M17.135 19.116h.961q.27 0 .442-.174q.173-.173.173-.442V5.73q0-.268-.172-.441t-.443-.173h-.961q-.27 0-.443.173t-.173.442V18.5q0 .27.173.442q.173.174.442.174m-9.73-5.385q.31 0 .52-.21t.21-.52t-.21-.521q-.21-.21-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m0 3q.31 0 .521-.21q.21-.209.21-.52t-.21-.52t-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m-.73-6.23h7.462v-3H6.673zm3.73 3.23q.31 0 .521-.21q.21-.209.21-.52t-.21-.52t-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m0 3q.31 0 .521-.21q.21-.209.21-.52t-.21-.52t-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m3-3q.31 0 .521-.21q.21-.209.21-.52t-.21-.52t-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m0 3q.31 0 .521-.21q.21-.209.21-.52t-.21-.52t-.52-.21t-.52.21q-.211.209-.211.52t.21.52t.52.21m2.116 1.386v-12H5.904q-.27 0-.442.173t-.173.442V17.5q0 .27.173.442q.173.174.442.174zm1.616 2q-.522 0-.919-.285t-.575-.715H5.904q-.666 0-1.141-.475T4.288 17.5V6.73q0-.665.475-1.14t1.14-.475h9.738q.178-.43.575-.715t.919-.285h.961q.667 0 1.141.475t.475 1.14V18.5q0 .666-.475 1.14q-.474.476-1.14.476zm-11.846-2v-12z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Front Desk Services</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Our staff is available 24/7 to assist you.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center space-x-4 p-3 bg-white border rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-[#004D73] p-3 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="white"
+                                d="M7.5 13.5v-1h9v1zm0 4v-1h6v1zM5.616 21q-.691 0-1.153-.462T4 19.385V6.615q0-.69.463-1.152T5.616 5h1.769V2.77h1.077V5h7.154V2.77h1V5h1.769q.69 0 1.153.463T20 6.616v12.769q0 .69-.462 1.153T18.384 21zm0-1h12.769q.23 0 .423-.192t.192-.424v-8.768H5v8.769q0 .23.192.423t.423.192" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-[#004D73] font-['Poppins']">Reception Hall</h3>
+                        <p class="text-gray-600 text-sm font-['Poppins']">Ideal for weddings, parties, and special
+                            events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer
+        class="bottom-0 left-0 z-20 w-full p-4 bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
+        <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia Del
+                Hamor™</a>. All Rights Reserved.
+        </span>
+    </footer>
+
+
+
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: "fade", // Smooth fade effect for a sleek look
+        });
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let links = document.querySelectorAll(".nav-link");
+            let currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("after:w-full"); // Make underline permanent for active page
+                    //link.classList.add("text-[#003092]"); // Optional: Make text bold
+                }
+            });
+        });
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    </body>
+
+</html>
