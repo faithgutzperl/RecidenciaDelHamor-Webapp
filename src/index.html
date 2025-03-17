@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
     <title>Recidencia Del Hamor</title>
 </head>
 
@@ -96,50 +98,73 @@
                 vacation immersed in the relaxing atmosphere of a crystalline water and an artistic scenery of the
                 place.
             </p>
-            <button
+            <div id="discover-section">
+            <button id="explore-btn"
                 class="mt-4 px-4 py-2 rounded-full bg-[#000957] text-white font-['Poppins'] hover:bg-[#344CB7] transition">
                 Explore now
             </button>
+            </div>
+            </div>
         </div>
     </div>
 
-    <div class="h-auto flex flex-col md:flex-row items-center justify-center gap-4 p-4">
-        <!-- Card 1 -->
-        <figure
-            class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
-            <img class="rounded-lg w-full h-60 object-cover" src="images/bg13.webp" alt="Poolside Relaxation">
-            <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
-                <p class="underline p-2">Unwind by the pool, where relaxation meets paradise</p>
-            </figcaption>
-        </figure>
-    
-        <!-- Card 2 -->
-        <figure
-            class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
-            <img class="rounded-lg w-full h-60 object-cover" src="images/bg16.webp" alt="Luxury Suite">
-            <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
-                <p class="underline p-2">Experience luxury and comfort in our elegant suites</p>
-            </figcaption>
-        </figure>
-    
-        <!-- Card 3 -->
-        <figure
-            class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
-            <img class="rounded-lg w-full h-60 object-cover" src="images/b17.webp" alt="Dining with a View">
-            <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
-                <p class="underline p-2">Savor exquisite flavors with a view like no other</p>
-            </figcaption>
-        </figure>
+    <div class="p-10 bg-gradient-to-b from-[#E8F9FF] to-[#C6E7FF] text-center text-[#003092] font-['Poppins']">
+        <p class="mb-4">
+            Escape to Recidencia Del Hamor in Sorsogon City for a luxurious and relaxing getaway.
+            Enjoy stunning views of Mt. Bulusan and Sorsogon Bay from the comfort of air-conditioned rooms with garden
+            or pool views.
+            Unwind in one of the four infinity pools or your own private plunge pool. Indulge in rejuvenating spa
+            services and delicious, affordable food. Explore Sorsogon City's culture and natural attractions, or simply
+            relax on the nearby beach. Recidencia Del Hamor is the perfect retreat for two travelers seeking tranquility
+            or adventure.
+        </p>
+
+
+        <div class="h-auto flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+            <!-- Card 1 -->
+            <figure
+                class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
+                <img class="rounded-lg w-full h-60 object-cover" src="images/bg13.webp" alt="Poolside Relaxation">
+                <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
+                    <p class="underline p-2">Unwind by the pool, where relaxation meets paradise</p>
+                </figcaption>
+            </figure>
+
+            <!-- Card 2 -->
+            <figure
+                class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
+                <img class="rounded-lg w-full h-60 object-cover" src="images/bg16.webp" alt="Luxury Suite">
+                <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
+                    <p class="underline p-2">Experience luxury and comfort in our elegant suites</p>
+                </figcaption>
+            </figure>
+
+            <!-- Card 3 -->
+            <figure
+                class="relative w-full md:w-1/3 transition-all duration-300 cursor-pointer filter brightness-75 hover:brightness-100">
+                <img class="rounded-lg w-full h-60 object-cover" src="images/b17.webp" alt="Dining with a View">
+                <figcaption class="absolute inset-x-0 bottom-4 px-4 text-sm md:text-lg text-white font-['Poppins']">
+                    <p class="underline p-2">Savor exquisite flavors with a view like no other</p>
+                </figcaption>
+            </figure>
+        </div>
     </div>
-    
-    
+
+
     <footer
         class="bottom-0 left-0 z-20 w-full p-4 bg-[#E8F9FF] border-t border-gray-200 shadow-sm md:flex md:items-center md:justify-between md:p-2 ">
         <span class="text-sm  sm:text-center text-[#004D73]">© 2025 <a href="" class="hover:underline">Residencia Del
                 Hamor™</a>. All Rights Reserved.
         </span>
     </footer>
-    
+
+    <script>
+        document.getElementById('explore-btn').addEventListener('click', function () {
+            document.getElementById('discover-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
 
     <script>
