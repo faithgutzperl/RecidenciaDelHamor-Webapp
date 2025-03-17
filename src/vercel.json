@@ -1,10 +1,7 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/index.html" }
-    ],
-    "outputDirectory": "src"
-  }
+  "rewrites": [
+    { "source": "/old-path", "destination": "/new-path" }
+  ]
+}
+
   
